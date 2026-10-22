@@ -1,0 +1,51 @@
+/* ─────────────────────────────────────────────
+   Bonsai BI — Color Tokens
+   ───────────────────────────────────────────── */
+
+:root {
+  /* ─── Brand Palette ─── */
+  --color-verde:        #16A085;
+  --color-verde-dark:   #0E8068;
+  --color-verde-darker: #0A5C4A;
+  --color-verde-light:  #1EC99F;
+  --color-verde-pale:   #D2EFE9;
+  --color-verde-ghost:  #EDF8F5;
+
+  /* ─── Neutrals ─── */
+  --color-negro:        #282938;
+  --color-negro-soft:   #383950;
+  --color-off-white:    #F8F7F5;
+  --color-gris-claro:   #E8E6E1;
+  --color-gris-medio:   #C5C2BB;
+  --color-gris-oscuro:  #7A7A7A;
+  --color-blanco:       #FFFFFF;
+
+  /* ─── Semantic: Text ─── */
+  --text-primary:       var(--color-negro);
+  --text-secondary:     var(--color-gris-oscuro);
+  --text-tertiary:      var(--color-gris-medio);
+  --text-inverse:       var(--color-off-white);
+  --text-brand:         var(--color-verde);
+  --text-on-brand:      var(--color-blanco);
+  --text-muted:         var(--color-gris-oscuro);
+
+  /* ─── Semantic: Background ─── */
+  --bg-page:            var(--color-off-white);
+  --bg-surface:         var(--color-blanco);
+  --bg-subtle:          var(--color-gris-claro);
+  --bg-dark:            var(--color-negro);
+  --bg-brand:           var(--color-verde);
+  --bg-brand-pale:      var(--color-verde-ghost);
+
+  /* ─── Semantic: Border ─── */
+  --border-default:     var(--color-gris-claro);
+  --border-strong:      var(--color-gris-medio);
+  --border-brand:       var(--color-verde);
+  --border-dark:        rgba(26,26,26,0.12);
+
+  /* ─── Semantic: Interactive ─── */
+  --interactive-primary:        var(--color-verde);
+  --interactive-primary-hover:  var(--color-verde-dark);
+  --interactive-primary-active: var(--color-verde-darker);
+  --interactive-focus-ring:     rgba(22, 160, 133, 0.3);
+}

@@ -1,0 +1,46 @@
+/* ─────────────────────────────────────────────
+   Bonsai BI — Effects Tokens
+   (Shadows, Transitions, Borders, Blur)
+   ───────────────────────────────────────────── */
+
+:root {
+  /* ─── Shadows ─── */
+  --shadow-xs:    0 1px 2px rgba(26, 26, 26, 0.06);
+  --shadow-sm:    0 2px 8px rgba(26, 26, 26, 0.08);
+  --shadow:       0 4px 16px rgba(26, 26, 26, 0.10);
+  --shadow-md:    0 8px 24px rgba(26, 26, 26, 0.12);
+  --shadow-lg:    0 16px 40px rgba(26, 26, 26, 0.14);
+  --shadow-xl:    0 24px 60px rgba(26, 26, 26, 0.18);
+  --shadow-brand: 0 4px 20px rgba(22, 160, 133, 0.25);
+  --shadow-brand-lg: 0 8px 32px rgba(22, 160, 133, 0.35);
+
+  /* ─── Transitions ─── */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);    /* @kind other */
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);   /* @kind other */
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);/* @kind other */
+  
+  --duration-fast:  150ms; /* @kind other */
+  --duration:       250ms;  /* @kind other */
+  --duration-slow:  400ms;  /* @kind other */
+  
+  --transition:        var(--duration) var(--ease-out);       /* @kind other */
+  --transition-fast:   var(--duration-fast) var(--ease-out);  /* @kind other */
+  --transition-slow:   var(--duration-slow) var(--ease-out);  /* @kind other */
+  --transition-spring: var(--duration) var(--ease-spring);    /* @kind other */
+
+  /* ─── Border Styles ─── */
+  --border-1:        1px solid var(--border-default); /* @kind other */
+  --border-1-strong:  1px solid var(--border-strong);  /* @kind other */
+  --border-2-brand:   2px solid var(--border-brand);   /* @kind other */
+  --border-1-dark:    1px solid rgba(26,26,26,0.15);   /* @kind other */
+
+  /* ─── Blur ─── */
+  --blur-sm: blur(4px);  /* @kind other */
+  --blur:    blur(8px);  /* @kind other */
+  --blur-md: blur(12px); /* @kind other */
+  --blur-lg: blur(20px); /* @kind other */
+
+  /* ─── Strokes (for icons) ─── */
+  --stroke-icon:    2px;   /* @kind other */
+  --stroke-icon-lg: 2.5px; /* @kind other */
+}

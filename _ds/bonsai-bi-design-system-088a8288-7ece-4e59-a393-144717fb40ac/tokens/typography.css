@@ -1,0 +1,104 @@
+/* ─────────────────────────────────────────────
+   Bonsai BI — Typography Tokens
+   
+   FONT NOTES:
+   - League Spartan   → Google Fonts ✓
+   - Comfortaa        → Google Fonts ✓
+   - Glacial Indifference → NOT on Google Fonts.
+     Substituted with Josefin Sans (geometric,
+     spaced-out sans-serif — closest match).
+     Ask client for font files to replace.
+   - Holla            → Not sourced. Client to
+     provide font files.
+   ───────────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700;800;900&family=Comfortaa:wght@300;400;500;600;700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100;1,300;1,400&display=swap');
+
+:root {
+  /* ─── Font Families ─── */
+  --font-display: 'League Spartan', sans-serif;
+  --font-body:    'Comfortaa', sans-serif;
+  --font-sub:     'Josefin Sans', sans-serif; /* Glacial Indifference substitute */
+
+  /* ─── Type Scale ─── */
+  --text-xs:   0.75rem;    /* 12px */
+  --text-sm:   0.875rem;   /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg:   1.125rem;   /* 18px */
+  --text-xl:   1.25rem;    /* 20px */
+  --text-2xl:  1.5rem;     /* 24px */
+  --text-3xl:  1.875rem;   /* 30px */
+  --text-4xl:  2.25rem;    /* 36px */
+  --text-5xl:  3rem;       /* 48px */
+  --text-6xl:  3.75rem;    /* 60px */
+  --text-7xl:  4.5rem;     /* 72px */
+
+  /* ─── Font Weights ─── */
+  --weight-light:     300;
+  --weight-regular:   400;
+  --weight-medium:    500;
+  --weight-semibold:  600;
+  --weight-bold:      700;
+  --weight-extrabold: 800;
+  --weight-black:     900;
+
+  /* ─── Line Heights ─── */
+  --leading-none:    1;
+  --leading-tight:   1.1;
+  --leading-snug:    1.3;
+  --leading-normal:  1.5;
+  --leading-relaxed: 1.7;
+  --leading-loose:   2;
+
+  /* ─── Letter Spacing ─── */
+  --tracking-tighter: -0.03em;
+  --tracking-tight:   -0.02em;
+  --tracking-normal:   0em;
+  --tracking-wide:     0.04em;
+  --tracking-wider:    0.08em;
+  --tracking-widest:   0.15em;
+
+  /* ─── Semantic Type Tokens ─── */
+  --type-h1-family:  var(--font-display);
+  --type-h1-size:    var(--text-6xl);
+  --type-h1-weight:  var(--weight-extrabold);
+  --type-h1-leading: var(--leading-tight);
+  --type-h1-tracking:var(--tracking-tight);
+
+  --type-h2-family:  var(--font-display);
+  --type-h2-size:    var(--text-5xl);
+  --type-h2-weight:  var(--weight-bold);
+  --type-h2-leading: var(--leading-tight);
+  --type-h2-tracking:var(--tracking-tight);
+
+  --type-h3-family:  var(--font-display);
+  --type-h3-size:    var(--text-4xl);
+  --type-h3-weight:  var(--weight-bold);
+  --type-h3-leading: var(--leading-snug);
+  --type-h3-tracking:var(--tracking-tight);
+
+  --type-h4-family:  var(--font-display);
+  --type-h4-size:    var(--text-2xl);
+  --type-h4-weight:  var(--weight-bold);
+  --type-h4-leading: var(--leading-snug);
+
+  --type-sub-family:   var(--font-sub);
+  --type-sub-size:     var(--text-lg);
+  --type-sub-weight:   var(--weight-regular);
+  --type-sub-leading:  var(--leading-relaxed);
+  --type-sub-tracking: var(--tracking-wide);
+
+  --type-body-family:  var(--font-body);
+  --type-body-size:    var(--text-base);
+  --type-body-weight:  var(--weight-regular);
+  --type-body-leading: var(--leading-relaxed);
+
+  --type-label-family:   var(--font-display);
+  --type-label-size:     var(--text-xs);
+  --type-label-weight:   var(--weight-bold);
+  --type-label-tracking: var(--tracking-widest);
+
+  --type-caption-family:   var(--font-sub);
+  --type-caption-size:     var(--text-sm);
+  --type-caption-tracking: var(--tracking-wider);
+}
